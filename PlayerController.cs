@@ -5,14 +5,10 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Basic")]
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float runSpeed;
-    [SerializeField] private float jumpHeight;
-    [SerializeField] private float gravityScale = 1f;
-
-    [Header("Collider")]
-    [SerializeField] private LayerMask groundLayers;
-    [SerializeField] private float groundRayCheckDistance;
+    [SerializeField] private float moveSpeed = 15f;
+    [SerializeField] private float runSpeed = 20f;
+    [SerializeField] private float jumpHeight = 2f;
+    [SerializeField] private float gravityScale = 2f;
 
     [Header("Reference")]
     [SerializeField] private CharacterController m_CharacterController;
